@@ -17,8 +17,8 @@ steps:
 
 - script:   
   #workingDirectory: prueba    
-    pwd
-  displayName: 'pwd'
+    ls
+  displayName: 'ls'
 
 - script:   
   #workingDirectory: prueba    
