@@ -18,6 +18,10 @@ steps:
 - script:   
   #workingDirectory: prueba    
     pwd
+  displayName: 'pwd'
+
+- script:   
+  #workingDirectory: prueba    
     npm install
     npm run build
   displayName: 'npm install and build'
