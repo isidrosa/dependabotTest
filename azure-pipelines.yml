@@ -21,7 +21,7 @@ steps:
   displayName: 'ls'
 
 - script:   
-  workingDirectory: codigo
+  workingDirectory: Codigo
     npm install
     npm run build
   displayName: 'npm install and build'
