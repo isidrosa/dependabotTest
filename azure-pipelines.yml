@@ -16,7 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script:   
-  workingDirectory: .
+  workingDirectory: prueba
     dir
     npm install
     npm run build
