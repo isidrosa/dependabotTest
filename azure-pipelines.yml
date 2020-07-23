@@ -15,8 +15,9 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: 
-  workingDirectory: prueba
+- script:   
+  workingDirectory: .
+    dir
     npm install
     npm run build
   displayName: 'npm install and build'
