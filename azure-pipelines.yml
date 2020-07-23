@@ -21,7 +21,7 @@ steps:
   displayName: 'ls'
 
 - script:   
-  #workingDirectory: prueba    
+  workingDirectory: codigo
     npm install
     npm run build
   displayName: 'npm install and build'
