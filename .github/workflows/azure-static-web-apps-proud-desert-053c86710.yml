@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:    
+      #- working-directory: Codigo
       - uses: actions/checkout@v2
       - name: User Node.js
         uses: actions/setup-node@v1
@@ -24,10 +25,7 @@ jobs:
         run: pwd
       - name: ls 
         run: ls 
-      - name: cd
-        run: cd Codigo/
-          #shell: bash
-        #run: cd /home/runner/work/dependabotTest/dependabotTest/Codigo/
+      - working-directory: Codigo
       - name: pwd
         run: pwd
       - run: npm install
