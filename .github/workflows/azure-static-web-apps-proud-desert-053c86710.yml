@@ -23,13 +23,20 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: pwd
         run: pwd
+          #/home/runner/work/dependabotTest/dependabotTest
       - name: ls 
         run: ls 
+          #Codigo
+          #azure-pipelines.yml
+          #index.html
+          #otroIndex.txt
       #- working-directory: Codigo
       - name: cd Codigo
         run: cd Codigo
+          #ejecuta el cd pero no cambia a la carpeta Codigo
       - name: pwd
         run: pwd
+          #/home/runner/work/dependabotTest/dependabotTest
       - run: npm install
       - run: npm run build --if-present   
       - name: Use Node.js ${{ matrix.node-version }}
