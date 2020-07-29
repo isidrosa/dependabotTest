@@ -23,6 +23,7 @@ jobs:
       #- name: pwd y ls 
       - run: pwd
       - run: ls
+      - run: cd Codigo
       - run: npm install
       - run: npm run build --if-present   
       - name: Use Node.js ${{ matrix.node-version }}
