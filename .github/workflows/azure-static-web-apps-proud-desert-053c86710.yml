@@ -23,7 +23,7 @@ jobs:
       - name: ls 
         run: ls 
       - name: cd Codigo
-        run: cd Codigo 
+        working-directory: Codigo
         #working-directory: /Codigo
       - run: npm install
       - run: npm run build --if-present   
