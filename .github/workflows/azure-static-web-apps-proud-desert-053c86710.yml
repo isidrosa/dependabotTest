@@ -25,7 +25,9 @@ jobs:
         run: pwd
       - name: ls 
         run: ls 
-      - working-directory: Codigo
+      #- working-directory: Codigo
+      - name: cd Codigo
+        run: cd Codigo
       - name: pwd
         run: pwd
       - run: npm install
