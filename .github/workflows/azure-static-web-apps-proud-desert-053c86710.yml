@@ -20,7 +20,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: pwd y ls 
+      - name: ls 
+        run: ls 
+      - name: cd Codigo
         run: cd Codigo 
         #working-directory: /Codigo
       - run: npm install
