@@ -31,8 +31,9 @@ jobs:
           #index.html
           #otroIndex.txt
       #- working-directory: Codigo
-      - name: cd Codigo
-        run: cd Codigo
+      - name: cd Ruta
+        run: echo "::add-path::/home/runner/work/dependabotTest/dependabotTest/Codigo"
+          #cd Codigo
           #ejecuta el cd pero no cambia a la carpeta Codigo
       - name: pwd
         run: pwd
