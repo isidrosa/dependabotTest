@@ -38,8 +38,9 @@ jobs:
       - name: pwd
         run: pwd
           #/home/runner/work/dependabotTest/dependabotTest
-      - run: npm install /home/runner/work/dependabotTest/dependabotTest/Codigo
-      - run: npm run build --if-present /home/runner/work/dependabotTest/dependabotTest/Codigo  
+      - run: npm config get prefix
+      - run: npm install #/home/runner/work/dependabotTest/dependabotTest/Codigo
+      - run: npm run build --if-present #/home/runner/work/dependabotTest/dependabotTest/Codigo  
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
