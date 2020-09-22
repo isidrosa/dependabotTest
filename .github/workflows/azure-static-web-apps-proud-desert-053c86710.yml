@@ -35,8 +35,8 @@ jobs:
       #  run: echo "::add-path::/home/runner/work/dependabotTest/dependabotTest/Codigo"
           #cd Codigo
           #ejecuta el cd pero no cambia a la carpeta Codigo
-      #- name: pwd
-      #  run: pwd
+      - name: pwd
+        run: pwd
           #/home/runner/work/dependabotTest/dependabotTest
       #- run: npm config get prefix
       - run: npm install --save /home/runner/work/dependabotTest/dependabotTest
